@@ -1,4 +1,4 @@
-!pip install openai-whisper
+#!pip install openai-whisper
 import ipywidgets as widgets
 from IPython.display import display
 import requests
