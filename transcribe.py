@@ -200,6 +200,13 @@ def transcribe():
     
     # Unload the model if no longer needed
     del model
+
+    try:
+        os.remove(file)
+        print(f"File {file} has been deleted")
+    except FileNotFoundError:
+        print(f"File {file} does not exist")
+
     print("\n-----FINISHED------");
             
 
